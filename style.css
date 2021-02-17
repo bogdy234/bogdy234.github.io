@@ -28,7 +28,6 @@ header {
   background-image: url("github.png");
   padding:5px;
   float:right;
-  display: inline-block;
   width: 20px;
   height: 20px;
   background-size:cover;
