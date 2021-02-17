@@ -5,16 +5,16 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-  margin-top: 30px;
   text-align: justify;  /* left-right align */
   background-color: rgba(20,20,20,1);
 }
 
 header {
-  margin: 0px;
+  margin-top:0px;
+  top:0px;
   background-color: rgba(50,50,50,1);
   padding-bottom: 25px;
-  border-radius: 100px;
+  border-radius: 20px;
 /*  border-top-left-radius: 100px 50px;
   border-top-right-radius: 100px 50px;
 /*  border-top-left-radius: 50px;
@@ -22,7 +22,6 @@ header {
 /*  position: fixed;
   transform: scale(0.82); */
 }
-
 
 #github {
   background-image: url("github.png");
@@ -32,7 +31,7 @@ header {
   height: 20px;
   background-size:cover;
   background-position: center;
-  border: 1px solid #000;
+ /*  border: 1px solid #000;*/
   transition: all .2s;
 }
 
@@ -40,7 +39,7 @@ header {
   background: url("githubhover.png") no-repeat;
   background-size: cover;
   background-position: center;
-  border: 1px solid #a00;
+  border: 1px solid #a00; 
   transform: scale(1.5);
 }
 
@@ -51,7 +50,7 @@ header {
   height: 20px;
   background-size: cover;
   background-position: center;
-  border: 1px solid #000;
+  /* border: 1px solid #000;*/
   background-image: url("instagram.png");
   transition: all .2s;
 }
@@ -73,7 +72,7 @@ header {
   height: 20px;
   background-size: cover;
   background-position: center;
-  border: 1px solid #000;
+ /* border: 1px solid #000;*/
   transition: all .2s;
 }
 
@@ -160,5 +159,37 @@ h3 {
 .description{
   color:rgb(150, 150, 150);
   text-align:center;
-  margin:10px;
+  padding-top:10px;
+}
+
+#contactText{
+  font-size:smaller;
+  color:rgb(155, 155, 155);
+  margin-top: 80px;
+}
+
+#name{
+  margin-top:20px;
+  background-color:rgb(50,50,50);
+}
+
+#subject{
+  margin-top:20px;
+  background-color:rgb(50,50,50);
+  width:500px;
+  margin-bottom:20px;
+}
+
+#message{
+  resize:none;
+  width:900px;
+  height:100px;
+  margin-bottom:20px;
+  background-color:rgb(50,50,50);
+}
+
+#sendButton{
+  background-color:rgb(50,50,50);
+  width:100px;
+  height:50px;
 }
