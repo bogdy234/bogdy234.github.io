@@ -9,3 +9,4 @@ function printNameAndAge(name, age){
 
 printNameAndAge("Bogdan", 20);
 printNameAndAge("Ion", 19);*/
+
