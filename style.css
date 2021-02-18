@@ -16,6 +16,7 @@ header {
   margin-top:0px;
   top:0px;
   background-color: rgba(50,50,50,1);
+  background-color:rgb(200,200,200,0.8);
   padding-bottom: 25px;
   border-radius: 20px;
 /*  border-top-left-radius: 100px 50px;
@@ -24,6 +25,21 @@ header {
     border-top-right-radius: 50px; */
 /*  position: fixed;
   transform: scale(0.82); */
+}
+
+title-text{
+  color: rgb(50,50,50);
+}
+title-text:hover {  /* hover de la titlu schimba culoarea*/
+  color: rgb(30,30,30);               
+}
+
+h3 {
+  color: rgb(50,50,50);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 20px 30px;
 }
 
 #github {
@@ -114,24 +130,12 @@ header div h1 {  /* titlul care include numele meu*/
 
 }
 
-title-text:hover {  /* hover de la titlu schimba culoarea*/
-  color: rgb(130,130,130);               
-}
-
 
 h2 {    /* Textul scris random pentru test */
   color:rgba(155,155,155);
 /*  padding-top: 250px; */
   margin-left: 5%;
   margin-right: 5%;
-}
-
-h3 {
-  color: rgb(150,150,150);
-  font-family: 'Roboto Condensed', sans-serif;
-  font-weight: 300;
-  text-align: center;
-  margin: 20px 30px;
 }
 
 .rectangle{
