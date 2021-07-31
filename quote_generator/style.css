@@ -1,0 +1,38 @@
+body{
+    background-color:lightseagreen;
+    display:flex;
+    justify-content: center;
+}
+
+#generate{
+    padding:30px;
+    text-align:center;
+    font-size:18px;
+    margin-top:5%;
+    display:flex;
+    justify-content: center;
+}
+#p1{
+  font-family: Impact, Charcoal, sans-serif	;
+  font-size:30;
+  margin-left:40px;
+  margin-right:40px;
+  margin-top:50px;
+  text-align:center;
+}
+
+.container{
+  width:800px;
+  height:700px;
+  opacity:0.9;
+  background-color:lightgray;
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+#generate:hover {
+    background: #b09e99    ;     
+    border-color: #b09e99 ;
+    color: #333333 ;
+}

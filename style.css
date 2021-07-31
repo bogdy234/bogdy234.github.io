@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+body {
+  background-image:url("./background4.jpg");
+  background-size:cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: justify;  /* left-right align */
+  background-color: rgba(20,20,20,1);
+}
+
+header {
+  margin-top:0px;
+  top:0px;
+  background-color: rgba(50,50,50,1);
+  background-color:rgb(200,200,200,0.8);
+  padding-bottom: 25px;
+  border-radius: 20px;
+/*  border-top-left-radius: 100px 50px;
+  border-top-right-radius: 100px 50px;
+/*  border-top-left-radius: 50px;
+    border-top-right-radius: 50px; */
+/*  position: fixed;
+  transform: scale(0.82); */
+}
+
+title-text{
+  color: rgb(50,50,50);
+}
+title-text:hover {  /* hover de la titlu schimba culoarea*/
+  color: rgb(30,30,30);               
+}
+
+h3 {
+  color: rgb(50,50,50);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  margin: 20px 30px;
+}
+
+#github {
+  background-image: url("github.png");
+  padding:5px;
+  float:right;
+  width: 20px;
+  height: 20px;
+  background-size:cover;
+  background-position: center;
+ /*  border: 1px solid #000;*/
+  transition: all .2s;
+}
+
+#github:hover {
+  background: url("githubhover.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #a00; 
+  transform: scale(1.5);
+}
+
+#instagram {
+  padding:5px;
+  float:right;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: center;
+  /* border: 1px solid #000;*/
+  background-image: url("instagram.png");
+  transition: all .2s;
+}
+
+#instagram:hover {
+  background: url("instagramhover.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #FFB6C1;
+  transform: scale(1.5);
+}
+
+#facebook {
+  background-image: url("facebook.png");
+  padding:5px;
+  margin-right:10px;
+  float:right;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: center;
+ /* border: 1px solid #000;*/
+  transition: all .2s;
+}
+
+#facebook:hover {
+  background: url(facebookhover.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #3b5998;
+  transform: scale(1.5);
+}
+
+#utcn {
+  display:inline-block;
+  width: 20px;
+  height: 20px;
+  background-size: cover;
+  background-position: center;
+  transition: 0.2s;
+}
+
+#utcn:hover {
+   transform: scale(2);
+}
+
+header div h1 {  /* titlul care include numele meu*/
+  color: rgb(150,150,150);
+  display:block;
+  text-align: center;
+  padding-right: 40px;
+  margin: 0px 20px;
+  padding-top: 20px;
+  border-bottom: 1px #000;
+  text-decoration: underline;
+  letter-spacing: 2px;
+  transition: color .2s;
+
+}
+
+
+h2 {    /* Textul scris random pentru test */
+  color:rgba(155,155,155);
+/*  padding-top: 250px; */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.rectangle{
+  transition:all .5s;
+}
+
+.rectangle:hover{
+  background-color:rgb(28,0,80);
+  font-size:larger;
+}
+
+.content{
+  margin-top:50px;
+  margin-left:50px;
+  margin-right:50px;
+  color:rgb(150, 150, 150);
+  border:4px solid rgb(30,30,30);
+  background-color:rgb(70,70,70);
+}
+
+.title{
+ font-weight:700;
+ font-size:30px;
+ color:rgb(150,150,150);
+ text-align:center;
+}
+
+.description{
+  color:rgb(150, 150, 150);
+  text-align:center;
+  padding-top:10px;
+}
+
+#contactText{
+  font-size:smaller;
+  color:rgb(155, 155, 155);
+  margin-top: 80px;
+}
+
+#name{
+  margin-top:20px;
+  background-color:rgb(50,50,50);
+}
+
+#subject{
+  margin-top:20px;
+  background-color:rgb(50,50,50);
+  width:500px;
+  margin-bottom:20px;
+}
+
+#message{
+  resize:none;
+  width:900px;
+  height:100px;
+  margin-bottom:20px;
+  background-color:rgb(50,50,50);
+}
+
+#sendButton{
+  background-color:rgb(50,50,50);
+  width:100px;
+  height:50px;
+}
