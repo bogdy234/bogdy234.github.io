@@ -11,6 +11,7 @@
   font-family: Helvetica; /*Stilul textului din interiorul celulelor*/
   font-size: 30px; /*Marimea textului*/
   text-align: center; /*Alinierea textului in mijlocul celulelor*/
+  transition: all 0.3s ease;
 }
 
 /* selectorul :hover va stiliza ceulele tabelului atunci cand trecem cu mouse-ul peste ceulele tabelului*/

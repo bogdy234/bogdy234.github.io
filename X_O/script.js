@@ -9,26 +9,30 @@ document.addEventListener("DOMContentLoaded", function (event) {
     let celula = celule[i];
     // specificam comportamentul celulei atunci cand este apasata
     celula.onclick = function (e) {
-      if (celula.innerHTML == "" && incurs) {
-        if (mutare % 2 == 1) {
-          celula.innerHTML = "X";
-        } else {
-          celula.innerHTML = "O";
+      celula.style.opacity = 0;
+      setTimeout(() => {
+        if (celula.innerHTML == "" && incurs) {
+          if (mutare % 2 == 1) {
+            celula.innerHTML = "X";
+          } else {
+            celula.innerHTML = "O";
+          }
+
+          celula.style.opacity = 1;
+          mutare++;
+
+          let semnulCastigator = verificareCastigator();
+
+          //niciun castigator; iesim din functie
+          if (semnulCastigator == "" || semnulCastigator == -1) {
+            return;
+          }
+
+          let jucatorCastigator = semnulCastigator == "X" ? "1 - X" : "2 - O";
+          alert("Castigator: Jucatorul " + jucatorCastigator);
+          incurs = false;
         }
-
-        mutare++;
-
-        let semnulCastigator = verificareCastigator();
-
-        //niciun castigator; iesim din functie
-        if (semnulCastigator == "" || semnulCastigator == -1) {
-          return;
-        }
-
-        let jucatorCastigator = semnulCastigator == "X" ? "1 - X" : "2 - O";
-        alert("Castigator: Jucatorul " + jucatorCastigator);
-        incurs = false;
-      }
+      }, 200);
     };
   }
 });
