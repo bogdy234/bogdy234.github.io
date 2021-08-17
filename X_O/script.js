@@ -104,3 +104,9 @@ function verificareCastigator() {
   // niciun castigator
   return -1;
 }
+
+const resetButton = document.querySelectorAll(".resetButton")[0];
+
+resetButton.addEventListener("click", () => {
+  location.reload();
+});

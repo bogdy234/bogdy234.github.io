@@ -1,6 +1,7 @@
 #tabel-xo {
   border: 1px solid black; /*Tabelul va avea o bordura de 1px -> un pixel, solid -> linie continua, black -> neagra*/
   border-collapse: collapse; /*Bordurile celulelor tabelului, se vor contopi intr-una singura.*/
+  margin-top: 20px;
 }
 
 /* Stilizarea tuturor celulelor tabelului*/
@@ -28,6 +29,12 @@ h1 {
 .board {
   height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.resetButton {
+  width: 150px;
+  height: 48px;
 }
