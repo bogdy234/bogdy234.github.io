@@ -1,41 +1,86 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap");
 
-body {
-  background-image: url("./assets/first-page-background.jpg");
-  background-size: cover;
-  background-position: center;
+body,
+html,
+main {
+  background: "linear-gradient(to right, rgba(80,80,80) 10%, rgba(90,90,90) 50%, rgba(60,60,60) 100%)";
   font-family: "Roboto", sans-serif;
   font-weight: 300;
   text-align: justify; /* left-right align */
   background-color: rgba(20, 20, 20, 1);
+  margin: 0;
+  height: 100vh;
 }
 
-header {
-  margin-top: 0px;
-  top: 0px;
-  background-color: rgba(50, 50, 50, 1);
-  background-color: rgb(200, 200, 200, 0.8);
-  padding-bottom: 25px;
-  border-radius: 20px;
-  /*  border-top-left-radius: 100px 50px;
-  border-top-right-radius: 100px 50px;
-/*  border-top-left-radius: 50px;
-    border-top-right-radius: 50px; */
-  /*  position: fixed;
-  transform: scale(0.82); */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.menuContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 80%;
+  margin-right: 40px;
+  gap: 20px;
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+
+.menuElement {
+  padding: 1.5rem;
+}
+
+.menuElement:hover {
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.8s;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100px;
+  width: 100%;
+  border: #e7e7e7;
+  margin-bottom: 30px;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+}
+
+.images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-left: 20px;
 }
 
 title-text {
-  color: rgb(50, 50, 50);
-}
-title-text:hover {
-  /* hover de la titlu schimba culoarea*/
-  color: rgb(30, 30, 30);
+  text-transform: uppercase;
 }
 
 h3 {
-  color: rgb(50, 50, 50);
   font-family: "Roboto Condensed", sans-serif;
   font-weight: 300;
   text-align: center;
@@ -44,32 +89,30 @@ h3 {
 
 #github {
   background: url("assets/github.png");
-  padding: 5px;
-  float: right;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background-size: cover;
   background-position: center;
-  /*  border: 1px solid #000;*/
-  transition: all 0.2s;
+  transition: background 0.2s;
 }
 
 #github:hover {
-  background: url("assets/githubhover.png") no-repeat;
+  background: url("assets/githubhover.png");
   background-size: cover;
   background-position: center;
-  border: 1px solid #a00;
-  transform: scale(1.5);
+  animation: 0.8s bounce;
+  -webkit-animation: bounce 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: bounce 1s; /* Firefox < 16 */
+  -ms-animation: bounce 1s; /* Internet Explorer */
+  -o-animation: bounce 1s; /* Opera < 12.1 */
+  animation: bounce 1s;
 }
 
 #instagram {
-  padding: 5px;
-  float: right;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background-size: cover;
   background-position: center;
-  /* border: 1px solid #000;*/
   background-image: url("assets/instagram.png");
   transition: all 0.2s;
 }
@@ -78,29 +121,30 @@ h3 {
   background: url("assets/instagramhover.png") no-repeat;
   background-size: cover;
   background-position: center;
-  border: 1px solid #ffb6c1;
-  transform: scale(1.5);
+  -webkit-animation: bounce 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: bounce 1s; /* Firefox < 16 */
+  -ms-animation: bounce 1s; /* Internet Explorer */
+  -o-animation: bounce 1s; /* Opera < 12.1 */
+  animation: bounce 1s;
 }
 
 #facebook {
   background: url("assets/facebook.png");
-  padding: 5px;
-  margin-right: 10px;
-  float: right;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background-size: cover;
   background-position: center;
-  /* border: 1px solid #000;*/
-  transition: all 0.2s;
 }
 
 #facebook:hover {
   background: url("assets/facebookhover.png") no-repeat;
   background-size: cover;
   background-position: center;
-  border: 1px solid #3b5998;
-  transform: scale(1.5);
+  -webkit-animation: bounce 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: bounce 1s; /* Firefox < 16 */
+  -ms-animation: bounce 1s; /* Internet Explorer */
+  -o-animation: bounce 1s; /* Opera < 12.1 */
+  animation: bounce 1s;
 }
 
 #utcn {
@@ -117,9 +161,8 @@ h3 {
   transform: scale(2);
 }
 
-header div h1 {
+div h1 {
   /* titlul care include numele meu*/
-  color: rgb(150, 150, 150);
   display: block;
   text-align: center;
   padding-right: 40px;
@@ -129,6 +172,25 @@ header div h1 {
   text-decoration: underline;
   letter-spacing: 2px;
   transition: color 0.2s;
+}
+
+.homePageHeader {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  padding-top: 20px;
+  border-bottom: 1px #000;
+  letter-spacing: 2px;
+  transition: color 0.2s;
+  margin-top: 0px;
+  top: 0px;
+  opacity: 0.97;
+  padding-bottom: 25px;
+  border-radius: 20px;
+}
+
+#typedText {
+  width: 100%;
 }
 
 h2 {
@@ -144,28 +206,33 @@ h2 {
 }
 
 .rectangle:hover {
-  background-color: rgb(28, 0, 80);
   font-size: larger;
 }
 
 .content {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
-  color: rgb(150, 150, 150);
-  border: 4px solid rgb(30, 30, 30);
-  background-color: rgb(70, 70, 70);
+  margin: 50px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 30%;
+
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.contentContainer {
+  display: flex;
 }
 
 .title {
   font-weight: 700;
   font-size: 30px;
-  color: rgb(150, 150, 150);
   text-align: center;
 }
 
 .description {
-  color: rgb(150, 150, 150);
   text-align: center;
   padding-top: 10px;
 }
@@ -200,4 +267,128 @@ h2 {
   background-color: rgb(50, 50, 50);
   width: 100px;
   height: 50px;
+}
+
+@keyframes bounce {
+  15% {
+    transform: translateY(0.2em);
+  }
+  40% {
+    transform: translateY(-0.1em);
+  }
+  60% {
+    transform: translateY(0.05em);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes bounce {
+  15% {
+    transform: translateY(0.2em);
+  }
+  40% {
+    transform: translateY(-0.1em);
+  }
+  60% {
+    transform: translateY(0.05em);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-moz-keyframes bounce {
+  15% {
+    transform: translateY(0.2em);
+  }
+  40% {
+    transform: translateY(-0.1em);
+  }
+  60% {
+    transform: translateY(0.05em);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-o-keyframes bounce {
+  15% {
+    transform: translateY(0.2em);
+  }
+  40% {
+    transform: translateY(-0.1em);
+  }
+  60% {
+    transform: translateY(0.05em);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes fadein {
+  15% {
+    transform: translateY(0.2em);
+  }
+  40% {
+    transform: translateY(-0.1em);
+  }
+  60% {
+    transform: translateY(0.05em);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

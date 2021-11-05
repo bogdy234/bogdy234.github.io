@@ -1,96 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="utf-8">
-  <meta name="author" content="Filimon Bogdan">
-
-  <title>Filimon Bogdan</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <header>
-    <div class="taskbar">
-      <h1>
-        <title-text>
-          Filimon Bogdan Daniel
-        </title-text>
-      </h1>
-      <div class="socialmedia">
-        <images>
-           <a href="https://www.facebook.com/bogdan.filimon.96/">
-             <div id="facebook"></div>
-           </a>
-           <a href="https://www.instagram.com/filimonb/">
-             <div id="instagram"></div>
-           </a>
-           <a href="https://github.com/bogdy234">
-             <div id="github"></div>
-           </a>
-         </images>
-      </div>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Filimon Bogdan">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./toggle.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar theme">
+                <div class="socialMedia">
+                    <div class="images">
+                        <a href="https://www.facebook.com/bogdan.filimon.96/" target="_blank" rel="noopener noreferrer">
+                            <div id="facebook"></div>
+                        </a>
+                        <a href="https://www.instagram.com/filimonb/" target="_blank" rel="noopener noreferrer">
+                            <div id="instagram"></div>
+                        </a>
+                        <a href="https://github.com/bogdy234" target="_blank" rel="noopener noreferrer">
+                            <div id="github"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="darkModeToggle">
+                     <!--<div>
+                        <input type="checkbox" id="toggle">
+                        <label for="toggle"></label>
+                    </div>  -->
+                </div>
+                <div class="menuContainer">
+                    <div class="menuElement homeButton">
+                        <div class="fontTheme">Home</div>
+                    </div>
+                    <div class="menuElement aboutButton">
+                        <div class="fontTheme">About</div>
+                    </div>
+                    <div class="menuElement skillsButton">
+                        <div class="fontTheme">Skills</div>
+                    </div>
+                    <div class="menuElement contactButton">
+                        <div class="fontTheme">Contact</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="homePageHeader theme">
+        <div id="typedText"></div>
     </div>
-    <p>
-      <h3> Student at Technical University of Cluj-Napoca
-         - Automation & Computer Science
-         <a href="https://www.utcluj.ro">
-           <div id="utcn"></div>
-         </a>
-        <br />
-        21 years old
-        <br />
-        "When we change the way we look at things, the things we look at change"
-      </h3>
-   </header>
-
-   <div class="content">
-     <a style = "text-decoration:none" href = "./quote_generator/index.html">
-       <div class = "rectangle">
-          <div class = "title">
-            Quote Generator
-          </div>
-          <div class = "description">
-            A quote generator: You press the button and you receive a motivational quote to start your day.
-          </div>
-          <div class = "picture">
-
-          </div>
-        </a>
-       </div>  
-   </div>
-
-   <div class="content">
-    <a style = "text-decoration:none" href = "./X_O/index.html">
-      <div class = "rectangle">
-         <div class = "title">
-           X and 0 
-         </div>
-         <div class = "description">
-          A game: X and 0 the well known game which can be played in 2 players.
-         </div>
-         <div class = "picture">
-
-         </div>
-       </a>
-      </div>  
-  </div>
-
-  <div class="content">
-    <a style = "text-decoration:none" href = "./calculator/index.html">
-      <div class = "rectangle">
-         <div class = "title">
-           Calculator
-         </div>
-         <div class = "description">
-           A calculator: Just a simple calculator which does it's job!
-         </div>
-         <div class = "picture">
-
-         </div>
-       </a>
-      </div>  
-  </div>
-  <footer>
-  </footer>
-  <script src = "main.js"></script>
+    <div class="contentContainer">
+        <div class="content theme">
+            <a href="./quote_generator/index.html" class="theme">
+                <div class="rectangle">
+                    <div class="title">
+                        Quote Generator
+                    </div>
+                    <div class="description">
+                        A quote generator: You press the button and you receive a motivational quote to start your day.
+                    </div>
+                    <div class="picture"></div>
+                </a>
+            </div>
+        </div>
+        <div class="content theme">
+            <a href="./X_O/index.html" class="theme">
+                <div class="rectangle">
+                    <div class="title">
+                        X and 0
+                    </div>
+                    <div class="description">
+                        A game: X and 0 the well known game which can be played in 2 players.
+                    </div>
+                    <div class="picture"></div>
+                </a>
+            </div>
+        </div>
+        <div class="content theme">
+            <a href="./calculator/index.html" class="theme">
+                <div class="rectangle">
+                    <div class="title">
+                        Calculator
+                    </div>
+                    <div class="description">
+                        A calculator: Just a simple calculator which does it's job!
+                    </div>
+                    <div class="picture"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright fontTheme">
+            Filimon Bogdan © 2021
+        </div>
+    </footer>
+    <script src="main.js"></script>
 </body>
 </html>

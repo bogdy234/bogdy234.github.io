@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../toggle.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar theme">
+                <div class="socialMedia">
+                    <div class="images">
+                        <a href="https://www.facebook.com/bogdan.filimon.96/" target="_blank" rel="noopener noreferrer">
+                            <div id="facebook"></div>
+                        </a>
+                        <a href="https://www.instagram.com/filimonb/" target="_blank" rel="noopener noreferrer">
+                            <div id="instagram"></div>
+                        </a>
+                        <a href="https://github.com/bogdy234" target="_blank" rel="noopener noreferrer">
+                            <div id="github"></div>
+                        </a>
+                    </div>
+                </div>
+                <div class="darkModeToggle">
+                    <!-- <div>
+                        <input type="checkbox" id="toggle">
+                        <label for="toggle"></label>
+                    </div> -->
+                </div>
+                <div class="menuContainer">
+                    <div class="menuElement homeButton">
+                        <div class="fontTheme">Home</div>
+                    </div>
+                    <div class="menuElement aboutButton">
+                        <div class="fontTheme">About</div>
+                    </div>
+                    <div class="menuElement skillsButton">
+                        <div class="fontTheme">Skills</div>
+                    </div>
+                    <div class="menuElement contactButton">
+                        <div class="fontTheme">Contact</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <form method="post" action="https://formspree.io/f/xvodjwjl">
+    <div class="pageContainer">
+        <div class="contactPageContainer">
+            <div class="imageInputContainer">
+                <img src="../assets/user-solid.svg" alt="user-icon" class="userIcon">
+                <input type="text" placeholder="Enter your name..." class="nameInput formInput" name="name" required=""></input>
+        </div>
+        <div class="imageInputContainer">
+            <img src="../assets/envelope-regular.svg" alt="user-icon" class="userIcon">
+            <input type="text" placeholder="Enter your email..." class="emailInput formInput" name="_replyto" required=""></input>
+    </div>
+    <div class="imageInputContainer">
+        <img src="../assets/comments-regular.svg" alt="user-icon" class="userIcon">
+        <textarea placeholder="Enter your message..." class="messageInput" name="message" required=""></textarea>
+    </div>
+    <div class="g-recaptcha" data-sitekey="6LcUuhcdAAAAABNlS-_aN7gGvq6C1QGMQLKFv1Qr"></div>
+     <button class="sendButton">Send</button>
+    </div>
+</div>
+</form>
+
+<script src="../main.js"></script>
+<script src="./script.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+</body>
+</html>
