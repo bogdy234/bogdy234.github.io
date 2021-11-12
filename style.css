@@ -269,6 +269,12 @@ h2 {
   height: 50px;
 }
 
+@media (max-width: 870px) {
+  .menuElement {
+    display: none;
+  }
+}
+
 @keyframes bounce {
   15% {
     transform: translateY(0.2em);

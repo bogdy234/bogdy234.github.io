@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../toggle.css">
+        <link rel="stylesheet" href="../dropdown.css">
     </head>
     <body>
         <header>
@@ -29,8 +30,7 @@
                     <!-- <div>
                         <input type="checkbox" id="toggle">
                         <label for="toggle"></label>
-                    </div> -->
-                </div>
+                    </div> --></div>
                 <div class="menuContainer">
                     <div class="menuElement homeButton">
                         <div class="fontTheme">Home</div>
@@ -45,30 +45,57 @@
                         <div class="fontTheme">Contact</div>
                     </div>
                 </div>
+                <div class="dropdown">
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="/">Home</a>
+                        <a href="/about">About</a>
+                        <a href="/skills">Skills</a>
+                        <a href="/contact">Contact</a>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     <form method="post" action="https://formspree.io/f/xvodjwjl">
-    <div class="pageContainer">
-        <div class="contactPageContainer">
+        <div class="pageContainer">
+            <div class="contactPageContainer">
+                <div class="imageInputContainer">
+                    <img src="../assets/user-solid.svg" alt="user-icon" class="userIcon">
+                    <input
+                        type="text"
+                        placeholder="Enter your name..."
+                        class="nameInput formInput"
+                        name="name"
+                        required=""
+                    ></input>
+            </div>
             <div class="imageInputContainer">
-                <img src="../assets/user-solid.svg" alt="user-icon" class="userIcon">
-                <input type="text" placeholder="Enter your name..." class="nameInput formInput" name="name" required=""></input>
+                <img src="../assets/envelope-regular.svg" alt="user-icon" class="userIcon">
+                <input
+                    type="text"
+                    placeholder="Enter your email..."
+                    class="emailInput formInput"
+                    name="_replyto"
+                    required=""
+                ></input>
         </div>
         <div class="imageInputContainer">
-            <img src="../assets/envelope-regular.svg" alt="user-icon" class="userIcon">
-            <input type="text" placeholder="Enter your email..." class="emailInput formInput" name="_replyto" required=""></input>
-    </div>
-    <div class="imageInputContainer">
-        <img src="../assets/comments-regular.svg" alt="user-icon" class="userIcon">
-        <textarea placeholder="Enter your message..." class="messageInput" name="message" required=""></textarea>
-    </div>
-    <div class="g-recaptcha" data-sitekey="6LcUuhcdAAAAABNlS-_aN7gGvq6C1QGMQLKFv1Qr"></div>
-     <button class="sendButton">Send</button>
+            <img src="../assets/comments-regular.svg" alt="user-icon" class="userIcon">
+            <textarea
+                placeholder="Enter your message..."
+                class="messageInput"
+                name="message"
+                required=""
+            ></textarea>
+        </div>
+        <!-- <div class="g-recaptcha" data-sitekey="6LcUuhcdAAAAABNlS-_aN7gGvq6C1QGMQLKFv1Qr"></div> -->
+        <button class="sendButton">Send</button>
     </div>
 </div>
 </form>
-
 <script src="../main.js"></script>
 <script src="./script.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js"></script>
