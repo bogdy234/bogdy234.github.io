@@ -15,14 +15,14 @@ h1 {
 
 .imagesRow {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
   gap: 10px;
 }
 
 img {
   max-width: 100%;
-  height: auto;
   background: center no-repeat;
 }
 
@@ -44,9 +44,6 @@ img {
 }
 
 @media only screen and (min-width: 480px) {
-  .card {
-    max-width: 190px;
-  }
   .imagesRow {
     gap: 50px;
   }
