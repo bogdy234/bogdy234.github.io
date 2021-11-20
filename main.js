@@ -127,3 +127,17 @@ skillsButton.addEventListener("click", () => {
 contactButton.addEventListener("click", () => {
   window.location.href = "/contact/index.html";
 });
+
+const menuButton = document.querySelector(".menu-btn");
+const dropdown = document.querySelector(".dropdown-content");
+
+menuButton.addEventListener("click", () => {
+  // handle opening and closing of hamburger menu
+  if (menuButton.classList.contains("open")) {
+    menuButton.classList.remove("open");
+    dropdown.style = "display: none";
+  } else {
+    menuButton.classList.add("open");
+    dropdown.style = "display: block";
+  }
+});

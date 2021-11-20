@@ -1,68 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="../contact/style.css">
-    <link rel="stylesheet" href="../dropdown.css">
-  </head>
-  <body>
-    <header>
-        <div class="navbar theme">
-            <div class="socialMedia">
-                <div class="images">
-                    <a href="https://www.facebook.com/bogdan.filimon.96/" target="_blank" rel="noopener noreferrer">
-                        <div id="facebook"></div>
-                    </a>
-                    <a href="https://www.instagram.com/filimonb/" target="_blank" rel="noopener noreferrer">
-                        <div id="instagram"></div>
-                    </a>
-                    <a href="https://github.com/bogdy234" target="_blank" rel="noopener noreferrer">
-                        <div id="github"></div>
-                    </a>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="../contact/style.css">
+        <link rel="stylesheet" href="../dropdown.css">
+    </head>
+    <body>
+        <header>
+            <div class="navbar theme">
+                <div class="socialMedia">
+                    <div class="images">
+                        <a href="https://www.facebook.com/bogdan.filimon.96/" target="_blank" rel="noopener noreferrer">
+                            <div id="facebook"></div>
+                        </a>
+                        <a href="https://www.instagram.com/filimonb/" target="_blank" rel="noopener noreferrer">
+                            <div id="instagram"></div>
+                        </a>
+                        <a href="https://github.com/bogdy234" target="_blank" rel="noopener noreferrer">
+                            <div id="github"></div>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <div class="darkModeToggle">
-                 <!--<div>
+                <div class="darkModeToggle">
+                    <!--<div>
                     <input type="checkbox" id="toggle">
                     <label for="toggle"></label>
-                </div>  -->
-            </div>
-            <div class="menuContainer">
-                <div class="menuElement homeButton">
-                    <div class="fontTheme">Home</div>
+                </div>  --></div>
+                <div class="menuContainer">
+                    <div class="menuElement homeButton">
+                        <div class="fontTheme">Home</div>
+                    </div>
+                    <div class="menuElement aboutButton">
+                        <div class="fontTheme">About</div>
+                    </div>
+                    <div class="menuElement skillsButton">
+                        <div class="fontTheme">Skills</div>
+                    </div>
+                    <div class="menuElement contactButton">
+                        <div class="fontTheme">Contact</div>
+                    </div>
                 </div>
-                <div class="menuElement aboutButton">
-                    <div class="fontTheme">About</div>
-                </div>
-                <div class="menuElement skillsButton">
-                    <div class="fontTheme">Skills</div>
-                </div>
-                <div class="menuElement contactButton">
-                    <div class="fontTheme">Contact</div>
-                </div>
-            </div>
-            <div class="dropdown">
-                <div class="menu-btn">
-                    <div class="menu-btn__burger"></div>
-                </div>
-                <div class="dropdown-content">
-                    <a href="/">Home</a>
-                    <a href="/about">About</a>
-                    <a href="/skills">Skills</a>
-                    <a href="/contact">Contact</a>
-                </div>
+                <div class="dropdown">
+                    <div class="menu-btn">
+                        <div class="menu-btn__burger"></div>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="/">
+                            <p>Home</p>
+                        </a>
+                        <a href="/about">
+                        </p>About
+                    </p>
+                </a>
+                <a href="/skills">
+                    <p>Skills</p>
+                </a>
+                <a href="/contact">
+                    <p>Contact</p>
+                </a>
             </div>
         </div>
     </div>
-</header>
-<div class="comingSoonPageContainer">
-    <div>COMING SOON</div>
 </div>
-    <script src="../main.js"></script>
-  </body>
+</header>
+<div class="skillsPageContainer">
+    <h1>Languages</h1>
+    <div class="imagesContainer">
+        <div class="imagesRow">
+            <div class="card"><img src="../assets/skills/javascript.svg"></div>
+            <div class="card"><img src='../assets/skills/typescript.svg'></div>
+        </div>
+    </div>
+    <h1>Front-End</h1>
+    <div class="imagesContainer">
+        <div class="imagesRow">
+            <div class="card"><img src="../assets/skills/html.svg"></div>
+            <div class="card"><img src='../assets/skills/css.svg'></div>
+            
+        </div>
+        <div class="imagesRow">
+            <div class="card"><img src='../assets/skills/react.svg'></div>
+            <div class="card"><img src='../assets/skills/next.svg'></div>
+        </div>
+    </div>
+    <h1>Hobbies</h1>
+    <div class="imagesContainer">
+        <div class="imagesRow">
+            <div class="card"><img src="../assets/skills/node.svg"></div>
+            <div class="card"><img src='../assets/skills/mongo.svg'></div>
+            
+        </div>
+    </div>
+</div>
+<script src="../main.js"></script>
+</body>
 </html>
