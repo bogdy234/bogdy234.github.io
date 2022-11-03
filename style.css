@@ -473,31 +473,6 @@ main {
     }
 }
 
-#eyes,
-#eyes img {
-    position: absolute;
-}
-
-.eye1 {
-    top: 16px;
-    left: -48px;
-}
-
-.eye2 {
-    top: 9px;
-    left: -15px;
-}
-
-.eye3 {
-    top: -60px;
-    left: 30px;
-}
-
-.eye4 {
-    top: -62px;
-    left: 58px;
-}
-
 .copyright {
     position: absolute;
     bottom: 12px;
